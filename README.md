@@ -1,3 +1,9 @@
+# ترجمه و توضیح کامل پروژه Free Claude Code
+
+---
+
+## ترجمه متن (فارسی)
+
 <div align="center">
 
 <h1>
@@ -7,50 +13,50 @@
   </picture>
 </h1>
 
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-2e7d32.svg?style=for-the-badge)](https://github.com/Alishahryar1/free-claude-code/blob/main/LICENSE)
-[![Python 3.14](https://img.shields.io/badge/python-3.14-3776ab.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
-[![Package Manager: uv](assets/package-manager-uv.svg)](https://github.com/astral-sh/uv)
-[![Testing: Pytest](https://img.shields.io/badge/Testing-Pytest-ad1457.svg?style=for-the-badge)](https://github.com/Alishahryar1/free-claude-code/actions/workflows/tests.yml)
-[![Type Checker: Ty](https://img.shields.io/badge/Type%20Checker-ty-fdd835.svg?style=for-the-badge)](https://pypi.org/project/ty/)
-[![Formatter: Ruff](https://img.shields.io/badge/Formatter-ruff-bf4b00.svg?style=for-the-badge)](https://github.com/astral-sh/ruff)
-[![Logging: Loguru](https://img.shields.io/badge/logging-loguru-00695c.svg?style=for-the-badge)](https://github.com/Delgan/loguru)
+[![مجوز: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-2e7d32.svg?style=for-the-badge)](https://github.com/Alishahryar1/free-claude-code/blob/main/LICENSE)
+[![پایتون 3.14](https://img.shields.io/badge/python-3.14-3776ab.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![مدیر بسته: uv](assets/package-manager-uv.svg)](https://github.com/astral-sh/uv)
+[![تست: Pytest](https://img.shields.io/badge/Testing-Pytest-ad1457.svg?style=for-the-badge)](https://github.com/Alishahryar1/free-claude-code/actions/workflows/tests.yml)
+[![بررسی نوع: Ty](https://img.shields.io/badge/Type%20Checker-ty-fdd835.svg?style=for-the-badge)](https://pypi.org/project/ty/)
+[![فرمت‌کننده: Ruff](https://img.shields.io/badge/Formatter-ruff-bf4b00.svg?style=for-the-badge)](https://github.com/astral-sh/ruff)
+[![لاگ: Loguru](https://img.shields.io/badge/logging-loguru-00695c.svg?style=for-the-badge)](https://github.com/Delgan/loguru)
 
-[Quick Start](#quick-start) · [Providers](#choose-a-provider) · [Clients](#connect-your-client) · [Integrations](#optional-integrations) · [Manage](#manage-your-installation)
+[شروع سریع](#quick-start) · [ارائه‌دهندگان](#choose-a-provider) · [کلاینت‌ها](#connect-your-client) · [یکپارچه‌سازی‌ها](#optional-integrations) · [مدیریت](#manage-your-installation)
 
 </div>
 
 <p align="center">
-  <em>Independent open-source project. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.</em>
+  <em>پروژه مستقل متن‌باز. وابسته به Anthropic نیست و توسط آن تأیید نشده است. Claude و Claude Code علائم تجاری Anthropic هستند.</em>
 </p>
 
-## What You Get
+## چه چیزی دریافت می‌کنید
 
-- **61 ToS-friendly providers. 1.3B+ free tokens every month.** Use free, paid, subscription, and local models from one searchable UI without putting your account at risk. FCC follows provider terms and removes integrations if they stop being allowed.
-- **12 coding agents. One model catalog.** Run [Claude Code](https://code.claude.com/docs/en/overview), [Codex](https://github.com/openai/codex), [Pi](https://github.com/earendil-works/pi), [OpenCode](https://github.com/anomalyco/opencode), [Cline](https://github.com/cline/cline), [Hermes](https://github.com/NousResearch/hermes-agent), [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness), [Grok Build](https://github.com/xai-org/grok-build), [Muse Code](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2/), [Aider](https://aider.chat/), [Antigravity CLI](https://antigravity.google/docs/getting-started/), or [VS Code Chat](https://code.visualstudio.com/) with your FCC models.
-- **Keep coding through provider outages.** After retries are exhausted, FCC automatically tries your next configured model without making you restart the turn. This works across every client.
-- **Up to 90% lower token usage.** Optional [RTK](https://github.com/rtk-ai/rtk) filters common command output, and [Headroom](https://github.com/headroomlabs-ai/headroom) compresses tool results.
-- **Native Code sessions in your browser.** Choose a folder and run Codex in the browser with real-time and background support. Freely switch providers/models in the same session. Support for switching harnesses in the same session coming soon!
-- **Terminal, desktop, IDE, or phone.** Work through native launchers, [VS Code](https://code.visualstudio.com/), [Codex App](https://learn.chatgpt.com/docs/app), [JetBrains](https://www.jetbrains.com/), [Discord](https://discord.com/), or [Telegram](https://telegram.org/).
-- **Voice notes in. Code out.** Talk to your agent using local [Whisper](https://github.com/openai/whisper) or [NVIDIA NIM](https://docs.nvidia.com/nim/speech/latest/asr/deploy-asr-models/whisper.html) transcription.
-- **Agent capabilities stay intact.** Stream responses, use tools, preserve native interleaved thinking for maximum performance, send images, and route [Fable](https://www.anthropic.com/claude/fable), [Opus](https://www.anthropic.com/claude/opus), [Sonnet](https://www.anthropic.com/claude/sonnet), and [Haiku](https://www.anthropic.com/claude/haiku) independently with compatible models.
+- **۶۱ ارائه‌دهنده سازگار با شرایط استفاده. بیش از ۱.۳ میلیارد توکن رایگان در هر ماه.** از مدل‌های رایگان، پولی، اشتراکی و محلی از یک رابط جستجوپذیر واحد استفاده کنید بدون اینکه حساب خود را در خطر بیندازید. FCC از شرایط ارائه‌دهندگان پیروی می‌کند و اگر یکپارچه‌سازی‌ها دیگر مجاز نباشند، آن‌ها را حذف می‌کند.
+- **۱۲ عامل کدنویسی. یک کاتالوگ مدل.** [Claude Code](https://code.claude.com/docs/en/overview)، [Codex](https://github.com/openai/codex)، [Pi](https://github.com/earendil-works/pi)، [OpenCode](https://github.com/anomalyco/opencode)، [Cline](https://github.com/cline/cline)، [Hermes](https://github.com/NousResearch/hermes-agent)، [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)، [Grok Build](https://github.com/xai-org/grok-build)، [Muse Code](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2/)، [Aider](https://aider.chat/)، [Antigravity CLI](https://antigravity.google/docs/getting-started/)، یا [VS Code Chat](https://code.visualstudio.com/) را با مدل‌های FCC خود اجرا کنید.
+- **در طول قطعی‌های ارائه‌دهنده به کدنویسی ادامه دهید.** پس از اتمام تلاش‌های مجدد، FCC به‌طور خودکار مدل پیکربندی‌شده بعدی شما را امتحان می‌کند بدون اینکه مجبور باشید نوبت را دوباره شروع کنید. این در همه کلاینت‌ها کار می‌کند.
+- **تا ۹۰٪ کاهش مصرف توکن.** فیلترهای اختیاری [RTK](https://github.com/rtk-ai/rtk) خروجی معمول دستورات را فیلتر می‌کنند، و [Headroom](https://github.com/headroomlabs-ai/headroom) نتایج ابزار را فشرده می‌کند.
+- **جلسات بومی کد در مرورگر شما.** یک پوشه انتخاب کنید و Codex را در مرورگر با پشتیبانی بلادرنگ و پس‌زمینه اجرا کنید. آزادانه ارائه‌دهنده/مدل را در همان جلسه تغییر دهید. پشتیبانی از تغییر هارنس در همان جلسه به‌زودی!
+- **ترمینال، دسکتاپ، IDE یا گوشی.** از طریق لانچرهای بومی، [VS Code](https://code.visualstudio.com/)، [Codex App](https://learn.chatgpt.com/docs/app)، [JetBrains](https://www.jetbrains.com/)، [Discord](https://discord.com/) یا [Telegram](https://telegram.org/) کار کنید.
+- **یادداشت صوتی وارد کنید. کد دریافت کنید.** با عامل خود با استفاده از [Whisper](https://github.com/openai/whisper) محلی یا [NVIDIA NIM](https://docs.nvidia.com/nim/speech/latest/asr/deploy-asr-models/whisper.html) صحبت کنید.
+- **قابلیت‌های عامل دست‌نخورده می‌مانند.** پاسخ‌های استریم، استفاده از ابزارها، حفظ تفکر درهم‌تنیده بومی برای حداکثر عملکرد، ارسال تصاویر، و مسیریابی [Fable](https://www.anthropic.com/claude/fable)، [Opus](https://www.anthropic.com/claude/opus)، [Sonnet](https://www.anthropic.com/claude/sonnet)، و [Haiku](https://www.anthropic.com/claude/haiku) به‌صورت مستقل با مدل‌های سازگار.
 
-Free-tier availability and limits are controlled by each provider and may change.
+در دسترس بودن و محدودیت‌های سطح رایگان توسط هر ارائه‌دهنده کنترل می‌شود و ممکن است تغییر کند.
 
 <div align="center">
   <img src="assets/pic.png" alt="Claude Code running with Free Claude Code" width="700">
-  <p><em>Claude Code running with FCC.</em></p>
+  <p><em>Claude Code در حال اجرا با FCC.</em></p>
 </div>
 
 <div align="center">
   <img src="assets/browser-code-session.png" alt="Native Codex browser session in FCC, showing model controls and a repository exploration" width="700">
-  <p><em>A native Codex session in FCC's browser UI.</em></p>
+  <p><em>یک جلسه بومی Codex در رابط مرورگر FCC.</em></p>
 </div>
 
-## Quick Start
+## شروع سریع
 
 <a id="install"></a>
 
-### 1. Install
+### ۱. نصب
 
 macOS/Linux:
 
@@ -64,48 +70,45 @@ Windows PowerShell:
 & ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install.ps1")))
 ```
 
-When prompted, choose at least one coding agent and optionally enable [RTK](https://github.com/rtk-ai/rtk) + [Headroom](https://github.com/headroomlabs-ai/headroom) token optimization for supported agents.
+وقتی از شما پرسیده شد، حداقل یک عامل کدنویسی انتخاب کنید و به‌صورت اختیاری بهینه‌سازی توکن [RTK](https://github.com/rtk-ai/rtk) + [Headroom](https://github.com/headroomlabs-ai/headroom) را برای عامل‌های پشتیبانی‌شده فعال کنید.
 
-### 2. Start FCC
+### ۲. شروع FCC
 
 #### Windows
 
-Open **Free Claude Code** from your desktop or Start menu.
+**Free Claude Code** را از دسکتاپ یا منوی Start باز کنید.
 
 #### macOS
 
-Open **Free Claude Code** from your desktop or Applications folder.
+**Free Claude Code** را از دسکتاپ یا پوشه Applications باز کنید.
 
 #### Linux
 
-Run:
+اجرا کنید:
 
 ```bash
 fcc-server
 ```
 
-FCC opens the Admin UI after starting. On Windows and macOS, use the tray or
-menu-bar icon to open Admin, restart, or quit. When using `fcc-server`, keep its
-terminal open.
+FCC پس از شروع، رابط مدیریت (Admin UI) را باز می‌کند. در Windows و macOS، از آیکون tray یا نوار منو برای باز کردن Admin، راه‌اندازی مجدد یا خروج استفاده کنید. هنگام استفاده از `fcc-server`، ترمینال آن را باز نگه دارید.
 
 <a id="nvidia-nim-provider"></a>
 
-### 3. Configure NVIDIA NIM
+### ۳. پیکربندی NVIDIA NIM
 
-1. Create an API key at [build.nvidia.com/settings/api-keys](https://build.nvidia.com/settings/api-keys).
-2. Open the Admin UI URL from the server log.
-3. Open NVIDIA NIM in **Providers**, click **Add key**, paste the key, and click **Save**.
-4. Leave `MODEL` on the default `nvidia_nim/nvidia/nemotron-3-ultra-550b-a55b`, or search the model dropdown and select another model.
-5. Click **Apply** to save your model selection.
+1. یک کلید API در [build.nvidia.com/settings/api-keys](https://build.nvidia.com/settings/api-keys) ایجاد کنید.
+2. URL رابط مدیریت را از لاگ سرور باز کنید.
+3. NVIDIA NIM را در **Providers** باز کنید، روی **Add key** کلیک کنید، کلید را جای‌گذاری کنید و روی **Save** کلیک کنید.
+4. `MODEL` را روی پیش‌فرض `nvidia_nim/nvidia/nemotron-3-ultra-550b-a55b` بگذارید، یا مدل دیگری را از منوی کشویی جستجو و انتخاب کنید.
+5. روی **Apply** کلیک کنید تا انتخاب مدل ذخیره شود.
 
-To protect the local proxy with a bearer token, enable **Proxy Authentication**
-in Admin.
+برای محافظت از پروکسی محلی با توکن bearer، **Proxy Authentication** را در Admin فعال کنید.
 
 <div align="center">
   <img src="assets/admin-page.png" alt="Free Claude Code Admin UI" width="700">
 </div>
 
-### 4. Run Your Coding Agent
+### ۴. عامل کدنویسی خود را اجرا کنید
 
 Claude Code:
 
@@ -167,7 +170,7 @@ Aider:
 fcc-aider
 ```
 
-Antigravity CLI (connect on the Integrations page first):
+Antigravity CLI (ابتدا در صفحه Integrations متصل شوید):
 
 ```bash
 fcc-agy
@@ -177,38 +180,34 @@ fcc-agy
 
 <div align="center">
   <img src="assets/cc-model-picker.png" alt="Claude Code model picker showing FCC models" width="700">
-  <p><em>Select an FCC model from Claude Code's native <code>/model</code> picker.</em></p>
+  <p><em>یک مدل FCC را از انتخابگر بومی <code>/model</code> Claude Code انتخاب کنید.</em></p>
 </div>
 
-## Choose A Provider
+## انتخاب یک ارائه‌دهنده
 
-1. Open a provider link below for its key, models, or setup instructions.
-2. In the Admin UI, configure the listed setting. For OpenAI / ChatGPT
-   subscription access, use **Providers → OAuth providers** instead.
-3. Search the `MODEL` dropdown and select a model. If the provider cannot list
-   models, enter `<provider-id>/<exact-provider-model-id>` manually.
-4. Click **Apply**.
+1. یک لینک ارائه‌دهنده در زیر باز کنید برای کلید، مدل‌ها یا دستورالعمل‌های راه‌اندازی آن.
+2. در رابط مدیریت، تنظیمات ذکرشده را پیکربندی کنید. برای دسترسی اشتراک OpenAI / ChatGPT، به‌جای آن از **Providers → OAuth providers** استفاده کنید.
+3. منوی کشویی `MODEL` را جستجو کنید و یک مدل انتخاب کنید. اگر ارائه‌دهنده نمی‌تواند مدل‌ها را فهرست کند، `<provider-id>/<exact-provider-model-id>` را به‌صورت دستی وارد کنید.
+4. روی **Apply** کلیک کنید.
 
-Optional: add an ordered **Fallback Models** list under **Model Config**. It
-applies to every connected client. A failed request may reach and consume usage
-from more than one provider before succeeding.
+اختیاری: یک لیست مرتب **Fallback Models** در **Model Config** اضافه کنید. این برای هر کلاینت متصل اعمال می‌شود. یک درخواست ناموفق ممکن است قبل از موفقیت به بیش از یک ارائه‌دهنده برسد و از مصرف آن‌ها استفاده کند.
 
-Provider modals support numbered API keys. Use **Add key**, remove rows, or drag their handles to reorder them. FCC uses key 1.
+مودال‌های ارائه‌دهنده از کلیدهای API شماره‌گذاری‌شده پشتیبانی می‌کنند. از **Add key** استفاده کنید، ردیف‌ها را حذف کنید، یا دستگیره‌های آن‌ها را برای تغییر ترتیب بکشید. FCC از کلید ۱ استفاده می‌کند.
 
-For another API endpoint, open **Providers → Custom providers → Add provider**. Enter its API base URL, optional keys, and API format. Leave **Model IDs** empty to discover models automatically, or enter one upstream model ID per line. Save, then select a model in **Model Config**.
+برای یک نقطه پایانی API دیگر، **Providers → Custom providers → Add provider** را باز کنید. URL پایه API، کلیدهای اختیاری و فرمت API آن را وارد کنید. **Model IDs** را خالی بگذارید تا مدل‌ها به‌طور خودکار کشف شوند، یا یک شناسه مدل upstream در هر خط وارد کنید. ذخیره کنید، سپس یک مدل را در **Model Config** انتخاب کنید.
 
 <details>
-<summary><strong>Provider catalog</strong></summary>
+<summary><strong>کاتالوگ ارائه‌دهندگان</strong></summary>
 
-| Provider | Admin UI setting | Example `MODEL` |
+| ارائه‌دهنده | تنظیم رابط مدیریت | مثال `MODEL` |
 | --- | --- | --- |
 | [NVIDIA NIM](https://build.nvidia.com/settings/api-keys) | `NVIDIA_NIM_API_KEY` | `nvidia_nim/nvidia/nemotron-3-ultra-550b-a55b` |
 | [OpenRouter](https://openrouter.ai/keys) | `OPENROUTER_API_KEY` | `open_router/openrouter/free` |
 | [Groq](https://console.groq.com/keys) | `GROQ_API_KEY` | `groq/llama-3.3-70b-versatile` |
 | [ClinePass](https://docs.cline.bot/getting-started/clinepass) | `CLINE_API_KEY` | `cline_pass/cline-pass/kimi-k3` |
-| [OpenAI / ChatGPT](https://learn.chatgpt.com/docs/auth) | Connect ChatGPT in the Admin UI | `openai/<model-id>` |
+| [OpenAI / ChatGPT](https://learn.chatgpt.com/docs/auth) | اتصال ChatGPT در رابط مدیریت | `openai/<model-id>` |
 | [OpenAI API](https://platform.openai.com/api-keys) | `OPENAI_API_KEY` | `openai_api/gpt-5.6-sol` |
-| [GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-sdk/auth/authenticate) | Connect GitHub Copilot in the Admin UI | `github_copilot/<model-id>` |
+| [GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-sdk/auth/authenticate) | اتصال GitHub Copilot در رابط مدیریت | `github_copilot/<model-id>` |
 | [xAI (Grok)](https://console.x.ai/team/default/api-keys) | `XAI_API_KEY` | `xai/grok-4.5` |
 | [Alibaba Cloud](https://www.alibabacloud.com/help/en/model-studio/get-api-key) | `ALIBABA_CLOUD_API_KEY` | `alibaba_cloud/<model-id>` |
 | [QwenCloud Token Plan](https://home.qwencloud.com/api-keys) | `QWENCLOUD_API_KEY` | `qwencloud/qwen3.7-plus` |
@@ -223,7 +222,7 @@ For another API endpoint, open **Providers → Custom providers → Add provider
 | [ZenMux](https://zenmux.ai/platform/pay-as-you-go) | `ZENMUX_API_KEY` | `zenmux/deepseek/deepseek-v4-flash-free` |
 | [W&B Inference](https://wandb.ai/settings) | `WANDB_API_KEY` | `wandb/openai/gpt-oss-20b` |
 | [Anthropic](https://platform.claude.com/settings/keys) | `ANTHROPIC_API_KEY` | `anthropic/<model-id>` |
-| [Azure OpenAI](https://learn.microsoft.com/azure/foundry/openai/how-to/chatgpt) | `AZURE_OPENAI_API_KEY` and `AZURE_OPENAI_BASE_URL` | `azure_openai/<deployment-name>` |
+| [Azure OpenAI](https://learn.microsoft.com/azure/foundry/openai/how-to/chatgpt) | `AZURE_OPENAI_API_KEY` و `AZURE_OPENAI_BASE_URL` | `azure_openai/<deployment-name>` |
 | [Google AI Studio (Gemini)](https://aistudio.google.com/apikey) | `GEMINI_API_KEY` | `gemini/models/gemini-3.1-flash-lite` |
 | [Google Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/start/openai) | `VERTEX_PROJECT_ID` + ADC | `vertex/google/gemini-3.5-flash` |
 | [DeepSeek](https://platform.deepseek.com/api_keys) | `DEEPSEEK_API_KEY` | `deepseek/deepseek-chat` |
@@ -244,7 +243,7 @@ For another API endpoint, open **Providers → Custom providers → Add provider
 | [Kilo.ai](https://kilo.ai) | `KILO_API_KEY` | `kilo/kilo-auto/free` |
 | [Fireworks AI](https://fireworks.ai/account/api-keys) | `FIREWORKS_API_KEY` | `fireworks/accounts/fireworks/models/llama-v3p3-70b-instruct` |
 | [Novita AI](https://novita.ai/settings/key-management) | `NOVITA_API_KEY` | `novita/deepseek/deepseek-v4-flash-0731` |
-| [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) | `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` | `cloudflare/@cf/moonshotai/kimi-k2.6` |
+| [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) | `CLOUDFLARE_API_TOKEN` و `CLOUDFLARE_ACCOUNT_ID` | `cloudflare/@cf/moonshotai/kimi-k2.6` |
 | [Z.ai Coding Plan](https://z.ai/manage-apikey/apikey-list) | `ZAI_API_KEY` | `zai/glm-5.2` |
 | [Z.ai API (pay as you go)](https://z.ai/manage-apikey/apikey-list) | `ZAI_API_KEY` | `zai_api/glm-4.7-flash` |
 | [TokenRouter](https://www.tokenrouter.com/) | `TOKENROUTER_API_KEY` | `tokenrouter/moonshotai/kimi-k3-free` |
@@ -267,67 +266,38 @@ For another API endpoint, open **Providers → Custom providers → Add provider
 </details>
 
 <details>
-<summary><strong>Provider-specific setup</strong></summary>
+<summary><strong>راه‌اندازی مخصوص ارائه‌دهنده</strong></summary>
 
-- OpenAI / ChatGPT uses your ChatGPT subscription rather than an API key. Connect from
-  **Providers → OAuth providers → OpenAI / ChatGPT → Connect** in the Admin UI
-  and finish signing in through your browser. Restart an already-running agent after connecting.
-- Anthropic uses a separately billed API key. Add it under
-  **Providers → Cloud providers → Anthropic → Configure**, then choose a discovered
-  model. Multi-workspace keys also require `ANTHROPIC_WORKSPACE_ID`.
-- OpenAI API uses a separate Platform API key. Enter it under
-  **Providers → Cloud providers → OpenAI API → Configure**. The model list may
-  include IDs that cannot handle coding requests. Choose a text-generation model.
-- GitHub Copilot uses your signed-in GitHub account and subscription. Install
-  [Copilot CLI 1.0.83](https://github.com/github/copilot-cli/releases/tag/v1.0.83)
-  on PATH, then choose **Providers → OAuth providers → GitHub Copilot → Connect**.
-  Finish signing in, then select a `github_copilot/<model-id>` from the model picker.
-  Available models and quotas depend on your subscription and organization policies.
-  Restart an already-running agent after connecting.
-- Azure OpenAI uses the deployment names from your resource. Set
-  `AZURE_OPENAI_BASE_URL` to its complete v1 endpoint, such as
-  `https://YOUR-RESOURCE-NAME.openai.azure.com/openai/v1/`, and select a
-  deployment that supports Chat Completions. Enter the deployment name as a
-  custom model slug if it does not appear in the model dropdown.
-- Mistral Codestral uses a separate key from Mistral La Plateforme.
-- Kimi Code subscription keys use `kimi_code/`. Kimi API credit keys use
-  `kimi/`. Kimi Code plans are for personal interactive coding-agent use under
-  [Kimi's community guidelines](https://www.kimi.com/code/docs/en/kimi-code/community-guidelines.html).
-- Alibaba Cloud uses a Model Studio pay-as-you-go key and defaults to Singapore.
-  For another region or workspace, set `ALIBABA_CLOUD_BASE_URL` to its
-  [OpenAI-compatible endpoint](https://www.alibabacloud.com/help/en/model-studio/base-url)
-  ending in `/compatible-mode/v1`. The key and endpoint must use the same region.
-- QwenCloud Coding Plan keys use `qwencloud_coding/`. QwenCloud Token Plan keys
-  use `qwencloud/`. The keys and endpoints are not interchangeable. Coding Plan
-  is for local, personal, interactive coding-agent use under the
-  [Coding Plan terms](https://www.alibabacloud.com/help/en/model-studio/coding-plan).
-- OpenCode Zen and OpenCode Go share `OPENCODE_API_KEY` but use the explicit
-  `opencode_zen/` and `opencode_go/` model prefixes.
-- For Amazon Bedrock, set `BEDROCK_BASE_URL` to the URL for the same region as
-  the API key and select one of the listed models.
-- Vertex AI uses Google Application Default Credentials instead of an API key.
-  Locally, run `gcloud auth application-default login` once. Service-account
-  files and attached service accounts also work. Set `VERTEX_PROJECT_ID`, and
-  optionally change `VERTEX_LOCATION` from its `global` default.
-- Cloudflare requires both its API token and account ID.
-- For Ollama Cloud, use the exact model IDs shown in the model picker. Local
-  Ollama uses the separate `ollama/` prefix.
-- Prefer tool-capable models for coding agents. Local models also need enough context for the agent's system prompt and tool definitions.
+- OpenAI / ChatGPT از اشتراک ChatGPT شما به‌جای کلید API استفاده می‌کند. از **Providers → OAuth providers → OpenAI / ChatGPT → Connect** در رابط مدیریت متصل شوید و ورود را از طریق مرورگر کامل کنید. پس از اتصال، عامل در حال اجرا را مجدداً راه‌اندازی کنید.
+- Anthropic از یک کلید API جداگانه صورتحساب‌شده استفاده می‌کند. آن را در **Providers → Cloud providers → Anthropic → Configure** اضافه کنید، سپس یک مدل کشف‌شده انتخاب کنید. کلیدهای چندفضای‌کاری همچنین به `ANTHROPIC_WORKSPACE_ID` نیاز دارند.
+- OpenAI API از یک کلید API پلتفرم جداگانه استفاده می‌کند. آن را در **Providers → Cloud providers → OpenAI API → Configure** وارد کنید. لیست مدل ممکن است شامل شناسه‌هایی باشد که نمی‌توانند درخواست‌های کدنویسی را مدیریت کنند. یک مدل تولید متن انتخاب کنید.
+- GitHub Copilot از حساب و اشتراک GitHub وارد‌شده شما استفاده می‌کند. [Copilot CLI 1.0.83](https://github.com/github/copilot-cli/releases/tag/v1.0.83) را روی PATH نصب کنید، سپس **Providers → OAuth providers → GitHub Copilot → Connect** را انتخاب کنید. ورود را کامل کنید، سپس یک `github_copilot/<model-id>` از انتخابگر مدل انتخاب کنید. مدل‌ها و سهمیه‌های موجود به اشتراک و سیاست‌های سازمان شما بستگی دارد. پس از اتصال، عامل در حال اجرا را مجدداً راه‌اندازی کنید.
+- Azure OpenAI از نام‌های استقرار (deployment) از منبع شما استفاده می‌کند. `AZURE_OPENAI_BASE_URL` را روی نقطه پایانی کامل v1 آن تنظیم کنید، مانند `https://YOUR-RESOURCE-NAME.openai.azure.com/openai/v1/`، و یک استقرار انتخاب کنید که از Chat Completions پشتیبانی می‌کند. اگر نام استقرار در منوی کشویی مدل ظاهر نشد، آن را به‌عنوان یک اسلاگ مدل سفارشی وارد کنید.
+- Mistral Codestral از یک کلید جداگانه از Mistral La Plateforme استفاده می‌کند.
+- کلیدهای اشتراک Kimi Code از `kimi_code/` استفاده می‌کنند. کلیدهای اعتباری Kimi API از `kimi/` استفاده می‌کنند. طرح‌های Kimi Code برای استفاده شخصی تعاملی از عامل کدنویسی تحت [دستورالعمل‌های اجتماعی Kimi](https://www.kimi.com/code/docs/en/kimi-code/community-guidelines.html) هستند.
+- Alibaba Cloud از یک کلید pay-as-you-go Model Studio استفاده می‌کند و پیش‌فرض آن سنگاپور است. برای منطقه یا فضای‌کاری دیگر، `ALIBABA_CLOUD_BASE_URL` را روی [نقطه پایانی سازگار با OpenAI](https://www.alibabacloud.com/help/en/model-studio/base-url) آن تنظیم کنید که به `/compatible-mode/v1` ختم می‌شود. کلید و نقطه پایانی باید از یک منطقه استفاده کنند.
+- کلیدهای QwenCloud Coding Plan از `qwencloud_coding/` استفاده می‌کنند. کلیدهای QwenCloud Token Plan از `qwencloud/` استفاده می‌کنند. کلیدها و نقاط پایانی قابل تعویض نیستند. Coding Plan برای استفاده محلی، شخصی و تعاملی از عامل کدنویسی تحت [شرایط Coding Plan](https://www.alibabacloud.com/help/en/model-studio/coding-plan) است.
+- OpenCode Zen و OpenCode Go در `OPENCODE_API_KEY` مشترک هستند اما از پیشوندهای صریح مدل `opencode_zen/` و `opencode_go/` استفاده می‌کنند.
+- برای Amazon Bedrock، `BEDROCK_BASE_URL` را روی URL همان منطقه‌ای که کلید API در آن قرار دارد تنظیم کنید و یکی از مدل‌های فهرست‌شده را انتخاب کنید.
+- Vertex AI از Google Application Default Credentials به‌جای کلید API استفاده می‌کند. به‌صورت محلی، یک بار `gcloud auth application-default login` را اجرا کنید. فایل‌های حساب سرویس و حساب‌های سرویس متصل نیز کار می‌کنند. `VERTEX_PROJECT_ID` را تنظیم کنید، و به‌صورت اختیاری `VERTEX_LOCATION` را از پیش‌فرض `global` آن تغییر دهید.
+- Cloudflare به هم توکن API و هم شناسه حساب نیاز دارد.
+- برای Ollama Cloud، از شناسه‌های مدل دقیقی که در انتخابگر مدل نشان داده شده‌اند استفاده کنید. Ollama محلی از پیشوند جداگانه `ollama/` استفاده می‌کند.
+- مدل‌های دارای قابلیت ابزار را برای عامل‌های کدنویسی ترجیح دهید. مدل‌های محلی همچنین به زمینه کافی برای اعلان سیستم عامل و تعاریف ابزار نیاز دارند.
 
 </details>
 
 <details>
-<summary><strong>Local provider setup</strong></summary>
+<summary><strong>راه‌اندازی ارائه‌دهنده محلی</strong></summary>
 
-FCC automatically discovers models from running local servers at startup. If you start a server later, click **Refresh models** in Admin to add its models to the picker.
+FCC به‌طور خودکار مدل‌ها را از سرورهای محلی در حال اجرا در زمان شروع کشف می‌کند. اگر سروری را بعداً شروع کردید، روی **Refresh models** در Admin کلیک کنید تا مدل‌های آن به انتخابگر اضافه شوند.
 
 ### LM Studio
 
-Start LM Studio's local server, load a tool-capable model, and use the model identifier shown by LM Studio with the `lmstudio/` prefix. The default URL is `http://localhost:1234/v1`.
+سرور محلی LM Studio را شروع کنید، یک مدل دارای قابلیت ابزار بارگذاری کنید، و از شناسه مدلی که LM Studio نشان می‌دهد با پیشوند `lmstudio/` استفاده کنید. URL پیش‌فرض `http://localhost:1234/v1` است.
 
 ### llama.cpp
 
-Start `llama-server` with its OpenAI-compatible Chat Completions API and enough context for the model. Use the local model ID with the `llamacpp/` prefix. `LLAMACPP_BASE_URL` defaults to `http://localhost:8080/v1`.
+`llama-server` را با API سازگار با OpenAI Chat Completions و زمینه کافی برای مدل شروع کنید. از شناسه مدل محلی با پیشوند `llamacpp/` استفاده کنید. `LLAMACPP_BASE_URL` پیش‌فرض `http://localhost:8080/v1` است.
 
 ### Ollama
 
@@ -336,123 +306,114 @@ ollama pull llama3.1
 ollama serve
 ```
 
-Use the tag shown by `ollama list` with the `ollama/` prefix. `OLLAMA_BASE_URL` defaults to `http://localhost:11434`.
+از تگ نشان داده شده توسط `ollama list` با پیشوند `ollama/` استفاده کنید. `OLLAMA_BASE_URL` پیش‌فرض `http://localhost:11434` است.
 
-Provider cards show the checked endpoint and response time, with a useful message when a local server is unavailable. After starting the server or correcting its settings, click **Test** to refresh its models.
-
-</details>
-
-<details>
-<summary><strong>Optional model-tier routing</strong></summary>
-
-`MODEL` is the fallback for every request. Select a model for `MODEL_FABLE`, `MODEL_OPUS`, `MODEL_SONNET`, or `MODEL_HAIKU` to override an individual Claude Code tier. Select **None** to use `MODEL`.
-
-In **Admin UI → Model Config**, add **Fallback Models** in the order FCC should try them if the selected model fails. Each fallback has its own reasoning effort: **Inherit**, **Off**, **From client**, **Low**, **Medium**, **High**, **X-High**, or **Max**.
-
-Choose a model, effort, and API key number in the bottom row, then click **+**. **Key 1**, **Key 2**, and so on refer to the current numbered keys in that provider's settings. Edit the selections in place, drag the handle to change the order, or click the red trash button to remove a fallback.
-
-**Inherit** keeps the original request's resolved reasoning setting. **From client** uses the effort or token budget sent by your coding agent, bypassing the global or tier setting. You can select the same model with another key number.
+کارت‌های ارائه‌دهنده نقطه پایانی بررسی‌شده و زمان پاسخ را نشان می‌دهند، با یک پیام مفید وقتی سرور محلی در دسترس نیست. پس از شروع سرور یا اصلاح تنظیمات آن، روی **Test** کلیک کنید تا مدل‌های آن بازخوانی شوند.
 
 </details>
 
 <details>
-<summary><strong>Reasoning control</strong></summary>
+<summary><strong>مسیریابی اختیاری سطح مدل</strong></summary>
 
-Open **Admin UI → Model Config → Model Routing** and choose an effort beside each model. **Default Effort** starts at **From client**. Fable, Opus, Sonnet, and Haiku start at **Inherit**.
+`MODEL` جایگزین (fallback) برای هر درخواست است. یک مدل برای `MODEL_FABLE`، `MODEL_OPUS`، `MODEL_SONNET`، یا `MODEL_HAIKU` انتخاب کنید تا یک سطح خاص Claude Code را بازنویسی کنید. **None** را انتخاب کنید تا از `MODEL` استفاده شود.
 
-| Selection | Behavior |
+در **Admin UI → Model Config**، **Fallback Models** را به ترتیبی که FCC باید در صورت شکست مدل انتخاب‌شده امتحان کند اضافه کنید. هر fallback تلاش استدلال خود را دارد: **Inherit**، **Off**، **From client**، **Low**، **Medium**، **High**، **X-High**، یا **Max**.
+
+یک مدل، تلاش و شماره کلید API را در ردیف پایین انتخاب کنید، سپس روی **+** کلیک کنید. **Key 1**، **Key 2**، و غیره به کلیدهای شماره‌گذاری‌شده فعلی در تنظیمات آن ارائه‌دهنده اشاره دارند. انتخاب‌ها را در جای خود ویرایش کنید، دستگیره را برای تغییر ترتیب بکشید، یا برای حذف یک fallback روی دکمه قرمز سطل زباله کلیک کنید.
+
+**Inherit** تنظیم استدلال حل‌شده درخواست اصلی را حفظ می‌کند. **From client** از تلاش یا بودجه توکن ارسال‌شده توسط عامل کدنویسی شما استفاده می‌کند و تنظیمات جهانی یا سطح را دور می‌زند. می‌توانید همان مدل را با شماره کلید دیگری انتخاب کنید.
+
+</details>
+
+<details>
+<summary><strong>کنترل استدلال</strong></summary>
+
+**Admin UI → Model Config → Model Routing** را باز کنید و یک تلاش کنار هر مدل انتخاب کنید. **Default Effort** از **From client** شروع می‌شود. Fable، Opus، Sonnet، و Haiku از **Inherit** شروع می‌کنند.
+
+| انتخاب | رفتار |
 | --- | --- |
-| **From client** | Use the effort sent by your coding agent. If none is sent, keep the provider default. |
-| **Off** | Request reasoning to be disabled. |
-| **Low**, **Medium**, **High**, **X-High**, or **Max** | Override the client with the selected reasoning level. |
-| **Inherit** | Tier overrides use Default Effort. Fallbacks keep the original request's resolved effort. |
+| **From client** | از تلاش ارسال‌شده توسط عامل کدنویسی شما استفاده کنید. اگر هیچ‌کدام ارسال نشود، پیش‌فرض ارائه‌دهنده را حفظ کنید. |
+| **Off** | درخواست غیرفعال کردن استدلال. |
+| **Low**، **Medium**، **High**، **X-High**، یا **Max** | کلاینت را با سطح استدلال انتخاب‌شده بازنویسی کنید. |
+| **Inherit** | بازنویسی‌های سطح از Default Effort استفاده می‌کنند. Fallbackها تلاش حل‌شده درخواست اصلی را حفظ می‌کنند. |
 
 </details>
 
 <a id="connect-your-client"></a>
 
-## Connect Your Client
+## اتصال کلاینت شما
 
-FCC launchers automatically start the server.
+لانچرهای FCC به‌طور خودکار سرور را شروع می‌کنند.
 
-For editor and app integrations, install the client, start FCC, then open
-**Admin UI → Integrations** and click **Connect** on its card.
+برای یکپارچه‌سازی‌های ویرایشگر و اپلیکیشن، کلاینت را نصب کنید، FCC را شروع کنید، سپس **Admin UI → Integrations** را باز کنید و روی **Connect** در کارت آن کلیک کنید.
 
-- **Claude Code in VS Code**: Install the [Claude Code extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code).
-- **VS Code Chat**: Install the latest [VS Code](https://code.visualstudio.com/), connect, and select an FCC model in its built-in Chat model picker.
-- **Claude Desktop**: Install [Claude Desktop](https://claude.ai/download). Fully quit it before connecting or disconnecting, then reopen it. Disconnect returns to normal Claude sign-in.
-- **Codex in VS Code and App**: Install the [Codex extension](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) or Codex App.
-- **DeepSeek Harness Desktop**: Install and open the app once before connecting. Start a new session to use FCC models.
-- **Claude Code in JetBrains ACP**: Install Claude Agent in JetBrains AI Assistant and start it once, then click **Connect** in FCC. Reopen the IDE, select **Claude Code (FCC)**, and start a new chat. After JetBrains updates the agent, restart FCC before starting a new chat. Requires a local IDE in its standard installation locations.
+- **Claude Code در VS Code**: [افزونه Claude Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) را نصب کنید.
+- **VS Code Chat**: آخرین [VS Code](https://code.visualstudio.com/) را نصب کنید، متصل شوید، و یک مدل FCC را در انتخابگر مدل Chat داخلی آن انتخاب کنید.
+- **Claude Desktop**: [Claude Desktop](https://claude.ai/download) را نصب کنید. قبل از اتصال یا قطع اتصال، آن را کاملاً ببندید، سپس دوباره باز کنید. قطع اتصال به ورود عادی Claude بازمی‌گردد.
+- **Codex در VS Code و App**: [افزونه Codex](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) یا Codex App را نصب کنید.
+- **DeepSeek Harness Desktop**: برنامه را یک بار قبل از اتصال نصب و باز کنید. یک جلسه جدید شروع کنید تا از مدل‌های FCC استفاده کنید.
+- **Claude Code در JetBrains ACP**: Claude Agent را در JetBrains AI Assistant نصب کنید و یک بار آن را شروع کنید، سپس روی **Connect** در FCC کلیک کنید. IDE را دوباره باز کنید، **Claude Code (FCC)** را انتخاب کنید و یک چت جدید شروع کنید. پس از به‌روزرسانی عامل توسط JetBrains، FCC را قبل از شروع چت جدید مجدداً راه‌اندازی کنید. نیاز به یک IDE محلی در مکان‌های نصب استاندارد آن دارد.
 
-Reload VS Code or restart the app/IDE after connecting. In Codex and Claude Desktop, select an FCC
-model from the model picker. Reload or restart the client when FCC reports updated settings. Use
-**Disconnect** on the same card to remove the integration.
+پس از اتصال، VS Code را بارگذاری مجدد کنید یا برنامه/IDE را مجدداً راه‌اندازی کنید. در Codex و Claude Desktop، یک مدل FCC را از انتخابگر مدل انتخاب کنید. وقتی FCC تنظیمات به‌روزشده را گزارش می‌دهد، کلاینت را بارگذاری مجدد یا راه‌اندازی مجدد کنید. برای حذف یکپارچه‌سازی از **Disconnect** در همان کارت استفاده کنید.
 
-To complete Claude Code onboarding separately, open **Admin UI → Integrations →
-Claude Code onboarding** and click **Complete onboarding**. Connecting Claude Code
-in VS Code also completes onboarding.
+برای تکمیل جداگانه آنبوردینگ Claude Code، **Admin UI → Integrations → Claude Code onboarding** را باز کنید و روی **Complete onboarding** کلیک کنید. اتصال Claude Code در VS Code نیز آنبوردینگ را کامل می‌کند.
 
-Run FCC on the same computer and in the same user environment as the client you
-are configuring.
+FCC را روی همان کامپیوتر و در همان محیط کاربری کلاینتی که پیکربندی می‌کنید اجرا کنید.
 
 <a id="optional-integrations"></a>
 
-## Optional Integrations
+## یکپارچه‌سازی‌های اختیاری
 
-Configure integrations from **Admin UI → Messaging**, then click **Apply**.
+یکپارچه‌سازی‌ها را از **Admin UI → Messaging** پیکربندی کنید، سپس روی **Apply** کلیک کنید.
 
 <details>
-<summary><strong>Discord bot</strong></summary>
+<summary><strong>ربات Discord</strong></summary>
 
-1. Create a bot in the [Discord Developer Portal](https://discord.com/developers/applications).
-2. Enable **Message Content Intent** and invite it with read, send,
-   message-history, and **Manage Messages** permissions so `/clear` can remove
-   user prompts.
-3. Set **Messaging Platform** to **discord**.
-4. Enter **Discord Bot Token**, **Allowed Discord Channels**, and an absolute **Allowed Directory**.
-5. Apply the settings and restart the server if requested.
+1. یک ربات در [Discord Developer Portal](https://discord.com/developers/applications) ایجاد کنید.
+2. **Message Content Intent** را فعال کنید و آن را با مجوزهای خواندن، ارسال، تاریخچه پیام، و **Manage Messages** دعوت کنید تا `/clear` بتواند اعلان‌های کاربر را حذف کند.
+3. **Messaging Platform** را روی **discord** تنظیم کنید.
+4. **Discord Bot Token**، **Allowed Discord Channels**، و یک **Allowed Directory** مطلق وارد کنید.
+5. تنظیمات را اعمال کنید و در صورت درخواست، سرور را مجدداً راه‌اندازی کنید.
 
 </details>
 
 <details>
-<summary><strong>Telegram bot</strong></summary>
+<summary><strong>ربات Telegram</strong></summary>
 
-1. Create a bot with [@BotFather](https://t.me/BotFather).
-2. Get your numeric user ID from [@userinfobot](https://t.me/userinfobot).
-   In groups, grant the bot permission to delete messages.
-3. Set **Messaging Platform** to **telegram**.
-4. Enter **Telegram Bot Token**, **Allowed Telegram User ID**, and an absolute **Allowed Directory**.
-5. Apply the settings and restart the server if requested.
+1. یک ربات با [@BotFather](https://t.me/BotFather) ایجاد کنید.
+2. شناسه عددی کاربری خود را از [@userinfobot](https://t.me/userinfobot) دریافت کنید. در گروه‌ها، به ربات مجوز حذف پیام بدهید.
+3. **Messaging Platform** را روی **telegram** تنظیم کنید.
+4. **Telegram Bot Token**، **Allowed Telegram User ID**، و یک **Allowed Directory** مطلق وارد کنید.
+5. تنظیمات را اعمال کنید و در صورت درخواست، سرور را مجدداً راه‌اندازی کنید.
 
 </details>
 
-### Messaging commands
+### دستورات پیام‌رسانی
 
-| Usage | Behavior |
+| استفاده | رفتار |
 | --- | --- |
-| `/stats` | Show session state. |
-| Standalone `/stop` | Cancel all work. |
-| Reply with `/stop` | Cancel only the selected request while other queued requests continue. |
-| Standalone `/clear` | Clear all FCC conversations and their messages in this chat. |
-| Reply with `/clear` | Delete the selected message and the chain of replies to it. Keep other conversations. |
+| `/stats` | وضعیت جلسه را نشان دهید. |
+| `/stop` مستقل | همه کارها را لغو کنید. |
+| پاسخ با `/stop` | فقط درخواست انتخاب‌شده را لغو کنید در حالی که سایر درخواست‌های صف‌شده ادامه می‌یابند. |
+| `/clear` مستقل | همه مکالمات FCC و پیام‌های آن‌ها را در این چت پاک کنید. |
+| پاسخ با `/clear` | پیام انتخاب‌شده و زنجیره پاسخ‌های به آن را حذف کنید. سایر مکالمات را نگه دارید. |
 
 <details>
-<summary><strong>Voice notes</strong></summary>
+<summary><strong>یادداشت‌های صوتی</strong></summary>
 
-NVIDIA NIM transcription support is included in every installation. In **Admin UI → Messaging → Voice**, enable voice notes, select `nvidia_nim`, and choose a supported model. Configure your **NVIDIA NIM API key** on the Providers page.
+پشتیبانی رونویسی NVIDIA NIM در هر نصب گنجانده شده است. در **Admin UI → Messaging → Voice**، یادداشت‌های صوتی را فعال کنید، `nvidia_nim` را انتخاب کنید، و یک مدل پشتیبانی‌شده انتخاب کنید. کلید **NVIDIA NIM API** خود را در صفحه Providers پیکربندی کنید.
 
-For local Whisper on CPU or CUDA, re-run the installer with the local voice option:
+برای Whisper محلی روی CPU یا CUDA، نصب‌کننده را با گزینه صوت محلی دوباره اجرا کنید:
 
 macOS/Linux:
 
-Local Whisper on CPU or CUDA:
+Whisper محلی روی CPU یا CUDA:
 
 ```bash
 curl -fsSL "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install.sh" | sh -s -- --voice-local
 ```
 
-Local Whisper with CUDA 13.0:
+Whisper محلی با CUDA 13.0:
 
 ```bash
 curl -fsSL "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install.sh" | sh -s -- --voice-local --torch-backend cu130
@@ -460,69 +421,69 @@ curl -fsSL "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main
 
 Windows PowerShell:
 
-Local Whisper on CPU or CUDA:
+Whisper محلی روی CPU یا CUDA:
 
 ```powershell
 & ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install.ps1"))) -VoiceLocal
 ```
 
-Local Whisper with CUDA 13.0:
+Whisper محلی با CUDA 13.0:
 
 ```powershell
 & ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install.ps1"))) -VoiceLocal -TorchBackend cu130
 ```
 
-After installing local support, restart `fcc-server`. In **Admin UI → Messaging → Voice**, enable voice notes, select `cpu` or `cuda`, and choose the Whisper model. Local gated models need `HUGGINGFACE_API_KEY`.
+پس از نصب پشتیبانی محلی، `fcc-server` را مجدداً راه‌اندازی کنید. در **Admin UI → Messaging → Voice**، یادداشت‌های صوتی را فعال کنید، `cpu` یا `cuda` را انتخاب کنید، و مدل Whisper را انتخاب کنید. مدل‌های محلی gated به `HUGGINGFACE_API_KEY` نیاز دارند.
 
 </details>
 
-## Manage Your Installation
+## مدیریت نصب شما
 
-Run `fcc-server --version` to check the installed version without starting FCC.
+برای بررسی نسخه نصب‌شده بدون شروع FCC، `fcc-server --version` را اجرا کنید.
 
-### Update
+### به‌روزرسانی
 
-Stop all running FCC commands, then run:
+همه دستورات FCC در حال اجرا را متوقف کنید، سپس اجرا کنید:
 
 ```sh
 fcc-update
 ```
 
-The update installs the checked stable FCC release with its matching installer.
+به‌روزرسانی، نسخه پایدار بررسی‌شده FCC را با نصب‌کننده منطبق آن نصب می‌کند.
 
-To reinstall FCC or change optional components while already up to date, run the [installer](#install) directly.
+برای نصب مجدد FCC یا تغییر اجزای اختیاری در حالی که از قبل به‌روز هستید، نصب‌کننده را مستقیماً اجرا کنید.
 
-For local voice support, include `--voice-local` (macOS/Linux) or `-VoiceLocal` (Windows), plus your `--torch-backend` or `-TorchBackend` option if used.
+برای پشتیبانی صوت محلی، `--voice-local` (macOS/Linux) یا `-VoiceLocal` (Windows) را اضافه کنید، به‌همراه گزینه `--torch-backend` یا `-TorchBackend` خود در صورت استفاده.
 
-### Muse Code on native Windows
+### Muse Code روی Windows بومی
 
-To install or update only Muse Code:
+برای نصب یا به‌روزرسانی فقط Muse Code:
 
 ```powershell
 & ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install-muse.ps1")))
 ```
 
-To remove the Muse Code copy installed by FCC, keeping its data:
+برای حذف نسخه Muse Code نصب‌شده توسط FCC، با نگه داشتن داده‌های آن:
 
 ```powershell
 & ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/uninstall-muse.ps1")))
 ```
 
-Uninstalling FCC leaves Muse Code installed.
+حذف FCC، Muse Code را نصب‌شده باقی می‌گذارد.
 
-### Uninstall
+### حذف نصب
 
-Stop every running FCC command and quit connected desktop/editor apps before uninstalling.
+قبل از حذف نصب، هر دستور FCC در حال اجرا را متوقف کنید و برنامه‌های دسکتاپ/ویرایشگر متصل را ببندید.
 
-**Removes**
+**حذف می‌کند**
 
-- Free Claude Code, including its desktop launcher and commands
+- Free Claude Code، شامل لانچر دسکتاپ و دستورات آن
 - `~/.fcc/`
 
-**Keeps**
+**نگه می‌دارد**
 
-- uv and Python
-- Your coding agents, RTK, and Headroom
+- uv و Python
+- عامل‌های کدنویسی شما، RTK، و Headroom
 
 macOS/Linux:
 
@@ -536,17 +497,103 @@ Windows PowerShell:
 & ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/uninstall.ps1")))
 ```
 
-## Project Links
+## پیوندهای پروژه
 
-For a problem after installation, run the command below and paste its output into your bug report.
+برای یک مشکل پس از نصب، دستور زیر را اجرا کنید و خروجی آن را در گزارش باگ خود جای‌گذاری کنید.
 
 ```bash
 fcc-doctor
 ```
 
-- [Report bugs or request features](https://github.com/Alishahryar1/free-claude-code/issues)
-- [Contributing guide](CONTRIBUTING.md)
+- [گزارش باگ یا درخواست ویژگی](https://github.com/Alishahryar1/free-claude-code/issues)
+- [راهنمای مشارکت](CONTRIBUTING.md)
 
-## License
+## مجوز
 
-GNU Affero General Public License version 3 only (`AGPL-3.0-only`). See [LICENSE](LICENSE) for details.
+GNU Affero General Public License version 3 only (`AGPL-3.0-only`). برای جزئیات به [LICENSE](LICENSE) مراجعه کنید.
+
+---
+
+## توضیح و ضمیمه
+
+### این پروژه چیست؟
+
+**Free Claude Code (FCC)** یک پروژه متن‌باز است که یک **لایه واسط (proxy)** بین ابزارهای کدنویسی شما (مثل Claude Code، Codex، Cline و…) و ده‌ها ارائه‌دهنده مدل هوش مصنوعی قرار می‌دهد. هدفش این است که:
+
+- بتوانید مدل‌های **رایگان یا ارزان** (مثل سطح رایگان NVIDIA NIM، Groq، OpenRouter و…) را با همان ابزارهای کدنویسی حرفه‌ای استفاده کنید.
+- اگر یک ارائه‌دهنده قطع شد یا خطا داد، به‌طور خودکار به مدل بعدی در لیست fallback برود.
+- مصرف توکن را با فشرده‌سازی خروجی و فیلتر کردن نتایج ابزارها تا ۹۰٪ کاهش دهد.
+
+### معماری کلی (چطور کار می‌کند؟)
+
+```
+[Claude Code / Codex / Cline / ...]
+            │  (درخواست API)
+            ▼
+   [FCC Server محلی]  ←─ Admin UI (پیکربندی)
+            │  (مسیریابی + fallback + فشرده‌سازی)
+            ▼
+[NVIDIA NIM / Groq / OpenRouter / Ollama / ...]
+```
+
+1. **سرور محلی FCC** (`fcc-server`) روی سیستم شما بالا می‌آید.
+2. ابزار کدنویسی شما به‌جای تماس مستقیم با API اصلی، به این سرور محلی وصل می‌شود (لانچرهایی مثل `fcc-claude` این کار را خودکار انجام می‌دهند).
+3. FCC درخواست را به ارائه‌دهنده انتخاب‌شده در Admin UI می‌فرستد.
+4. اگر خطا داد، مدل بعدی در لیست **Fallback Models** را امتحان می‌کند.
+
+### اجزای اصلی
+
+| جزء | کار |
+| --- | --- |
+| `fcc-server` | سرور اصلی و پنل مدیریت |
+| `fcc-claude`, `fcc-codex`, ... | لانچرهایی که ابزار کدنویسی را با تنظیمات FCC اجرا می‌کنند |
+| Admin UI | رابط تحت وب برای پیکربندی کلیدها، مدل‌ها، fallback و یکپارچه‌سازی‌ها |
+| RTK / Headroom | ابزارهای اختیاری کاهش مصرف توکن |
+| Discord / Telegram / Voice | یکپارچه‌سازی‌های اختیاری برای کنترل از راه دور و ورودی صوتی |
+
+### پیش‌نیازها
+
+- **Python 3.14** (توسط نصب‌کننده خودکار نصب می‌شود)
+- **uv** (مدیر بسته، خودکار نصب می‌شود)
+- سیستم‌عامل: macOS، Linux یا Windows
+- برای بهترین نتیجه: یک کلید API از حداقل یکی از ارائه‌دهندگان (مثلاً NVIDIA NIM که رایگان است)
+
+### مراحل راه‌اندازی خلاصه
+
+1. **نصب** با اسکریپت یک‌خطی (بخش «نصب»).
+2. **اجرای FCC**: در ویندوز/مک از آیکون، در لینوکس با `fcc-server`.
+3. **پیکربندی ارائه‌دهنده**: در Admin UI کلید API را وارد و مدل را انتخاب کنید (مثلاً NVIDIA NIM).
+4. **اجرای عامل**: مثلاً `fcc-claude` را در ترمینال بزنید و کدنویسی کنید.
+5. **(اختیاری) اتصال ویرایشگرها**: VS Code، JetBrains، Claude Desktop و… را از صفحه Integrations وصل کنید.
+6. **(اختیاری) یکپارچه‌سازی پیام‌رسان/صوت**: Discord، Telegram، Whisper.
+
+### مفاهیم کلیدی که باید بدانید
+
+- **Fallback Models**: لیست مدل‌های پشتیبان به ترتیب. اگر مدل اصلی خطا داد، بعدی امتحان می‌شود. هر fallback می‌تواند سطح استدلال (reasoning effort) جداگانه داشته باشد.
+- **Model Routing (سطح‌بندی)**: می‌توانید برای هر سطح Claude (Fable/Opus/Sonnet/Haiku) مدل متفاوتی تعیین کنید. مثلاً Opus → یک مدل قوی، Haiku → یک مدل سریع و ارزان.
+- **Reasoning Effort**: میزان «فکر کردن» مدل. گزینه‌ها: From client (از خود ابزار)، Off، Low تا Max، Inherit.
+- **Proxy Authentication**: اگر می‌خواهید سرور محلی FCC با توکن محافظت شود (مثلاً در شبکه مشترک)، این را فعال کنید.
+- **Custom Providers**: اگر ارائه‌دهنده‌ای در لیست نیست، می‌توانید هر API سازگار با OpenAI را به‌صورت دستی اضافه کنید.
+
+### نکات مهم و هشدارها
+
+- ⚠️ FCC وابسته به Anthropic نیست؛ Claude و Claude Code علائم تجاری Anthropic هستند.
+- ⚠️ در دسترس بودن سطح رایگان توسط هر ارائه‌دهنده کنترل می‌شود و ممکن است تغییر کند.
+- ⚠️ FCC از شرایط استفاده ارائه‌دهندگان پیروی می‌کند و اگر یکپارچه‌سازی مجاز نباشد آن را حذف می‌کند.
+- ⚠️ کلیدهای اشتراکی (مثل Kimi Code، QwenCloud Coding Plan) معمولاً فقط برای **استفاده شخصی تعاملی** مجاز هستند؛ استفاده خودکار/تجاری ممکن است نقض شرایط باشد.
+- ⚠️ یک درخواست ناموفق ممکن است قبل از موفقیت چند ارائه‌دهنده را مصرف کند (وقتی fallback فعال است).
+- ⚠️ برای عامل‌های کدنویسی، مدل‌های **دارای قابلیت ابزار (tool-capable)** را انتخاب کنید؛ مدل‌های محلی همچنین به context کافی نیاز دارند.
+- ⚠️ FCC را روی همان کامپیوتر و همان محیط کاربری کلاینتی که پیکربندی می‌کنید اجرا کنید.
+
+### دستورات پرکاربرد (چیت شیت)
+
+| دستور | کار |
+| --- | --- |
+| `fcc-server` | شروع سرور + باز کردن Admin UI |
+| `fcc-server --version` | نمایش نسخه نصب‌شده |
+| `fcc-claude` | اجرای Claude Code با مدل‌های FCC |
+| `fcc-codex` | اجرای Codex |
+| `fcc-cline` | اجرای Cline |
+| `fcc-aider` | اجرای Aider |
+| `fcc-update` | به‌روزرسانی FCC |
+| `fcc-doctor` | عیب‌یابی و گزارش وضعیت |
